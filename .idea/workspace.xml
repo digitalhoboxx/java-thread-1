@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="203f403b-54bd-4c28-95d9-20c5e1e092f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
+    <list default="true" id="203f403b-54bd-4c28-95d9-20c5e1e092f1" name="Changes" comment="Basic use case:&#10;Job 2 needs to be threaded separately to ensure smooth running">
+      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +43,14 @@
       <option name="presentableId" value="Default" />
       <updated>1664346777767</updated>
     </task>
+    <task id="LOCAL-00001" summary="Basic use case:&#10;Job 2 needs to be threaded separately to ensure smooth running">
+      <created>1664349086544</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664349086544</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -55,5 +63,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Basic use case:&#10;Job 2 needs to be threaded separately to ensure smooth running" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic use case:&#10;Job 2 needs to be threaded separately to ensure smooth running" />
   </component>
 </project>
