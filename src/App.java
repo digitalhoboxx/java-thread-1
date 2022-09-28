@@ -7,8 +7,12 @@
 //    }
 //}
 
+class Irrelevant{
+
+}
+
 //MyTask is a thread
-class MyTask extends Thread{
+class MyTask extends Irrelevant implements Runnable{
     @Override
     public void run() {
         for(int doc = 1; doc <= 10; ++doc) {
@@ -21,7 +25,7 @@ class MyTask extends Thread{
 public class App {
     public App() {
     }
-    //main threadd
+    //main thread
     public static void main(String[] args) {
         //threads always execute jobs in a sequence
         //Execution Context
@@ -29,9 +33,13 @@ public class App {
         // job 1
         System.out.println("xXx App Started xXx");
         // job 2
-        MyTask task = new MyTask(); //Child Thread / Worker Thread
-//        task.executeTask();
-        task.start(); // start shell internally, execute run method
+//        task.executeTask(); //main use case
+//        MyTask task = new MyTask(); //Child Thread / Worker Thread // solution 1
+//        task.start(); // start shell internally, execute run method // solution 1
+
+        Runnable r = new MyTask();
+        Thread task = new Thread(r);
+        task.start();
 
         //until job2 is finished, no further jobs can be started
         //if job2 is a long-running operation, OS/JVM might give a message that app is not responding
